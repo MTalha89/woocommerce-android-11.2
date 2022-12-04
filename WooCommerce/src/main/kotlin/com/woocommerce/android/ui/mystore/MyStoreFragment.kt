@@ -292,7 +292,7 @@ class MyStoreFragment : TopLevelFragment(R.layout.fragment_my_store) {
                 stat = AnalyticsEvent.FEATURE_JETPACK_BENEFITS_BANNER,
                 properties = mapOf(AnalyticsTracker.KEY_JETPACK_BENEFITS_BANNER_ACTION to "tapped")
             )
-            findNavController().navigateSafely(MyStoreFragmentDirections.actionMyStoreToJetpackBenefitsDialog())
+            //findNavController().navigateSafely(MyStoreFragmentDirections.actionMyStoreToJetpackBenefitsDialog())
         }
         val appBarLayout = appBarLayout ?: return
         // For the banner to be above the bottom navigation view when the toolbar is expanded
