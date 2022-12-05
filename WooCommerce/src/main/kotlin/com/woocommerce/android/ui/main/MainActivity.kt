@@ -57,6 +57,7 @@ import com.woocommerce.android.ui.base.UIMessageResolver
 import com.woocommerce.android.ui.feedback.SurveyType
 import com.woocommerce.android.ui.login.LoginActivity
 import com.woocommerce.android.ui.main.BottomNavigationPosition.MORE
+//import com.woocommerce.android.ui.main.BottomNavigationPosition.MY_STORE
 import com.woocommerce.android.ui.main.BottomNavigationPosition.ORDERS
 import com.woocommerce.android.ui.main.BottomNavigationPosition.PRODUCTS
 import com.woocommerce.android.ui.main.MainActivityViewModel.MoreMenuBadgeState.Hidden
@@ -384,7 +385,7 @@ class MainActivity :
     override fun isAtNavigationRoot(): Boolean {
         return if (::navController.isInitialized) {
             val currentDestinationId = navController.currentDestination?.id
-            currentDestinationId == R.id.products ||
+            currentDestinationId == R.id.dashboard ||
                 currentDestinationId == R.id.orders ||
                 currentDestinationId == R.id.products ||
                 currentDestinationId == R.id.moreMenu ||
@@ -636,8 +637,7 @@ class MainActivity :
 
     override fun onNavItemSelected(navPos: BottomNavigationPosition) {
         val stat = when (navPos) {
-            //MY_STORE -> AnalyticsEvent.MAIN_TAB_DASHBOARD_SELECTED
-            ANALYTICS -> AnalyticsEvent.MAIN_TAB_ANALYTICS_SELECTED
+            BottomNavigationPosition.ANALYTICS -> AnalyticsEvent.MAIN_TAB_DASHBOARD_SELECTED
             ORDERS -> AnalyticsEvent.MAIN_TAB_ORDERS_SELECTED
             PRODUCTS -> AnalyticsEvent.MAIN_TAB_PRODUCTS_SELECTED
             MORE -> AnalyticsEvent.MAIN_TAB_HUB_MENU_SELECTED
@@ -651,8 +651,7 @@ class MainActivity :
 
     override fun onNavItemReselected(navPos: BottomNavigationPosition) {
         val stat = when (navPos) {
-            //MY_STORE -> AnalyticsEvent.MAIN_TAB_DASHBOARD_RESELECTED
-            ANALYTICS -> AnalyticsEvent.MAIN_TAB_ANALYTICS_RESELECTED
+            BottomNavigationPosition.ANALYTICS -> AnalyticsEvent.MAIN_TAB_DASHBOARD_RESELECTED
             ORDERS -> AnalyticsEvent.MAIN_TAB_ORDERS_RESELECTED
             PRODUCTS -> AnalyticsEvent.MAIN_TAB_PRODUCTS_RESELECTED
             MORE -> AnalyticsEvent.MAIN_TAB_HUB_MENU_RESELECTED
