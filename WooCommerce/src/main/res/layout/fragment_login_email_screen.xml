@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -70,8 +87,8 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/login_what_is_wordpress"
             style="@style/Widget.LoginFlow.Button.Tertiary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_marginStart="@dimen/margin_extra_large"
             android:layout_marginEnd="@dimen/margin_extra_large"
             android:text="@string/what_is_wordpress_link"
@@ -101,14 +118,14 @@
             <include
                 android:id="@+id/orDivider"
                 layout="@layout/woo_login_or_layout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/button_login_qr_code"
                 style="@style/Widget.LoginFlow.Button.Secondary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="@dimen/major_100"
                 android:layout_marginEnd="@dimen/major_100"
                 android:text="@string/login_with_qr_code"
@@ -117,8 +134,8 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/continue_with_google"
                 style="@style/Widget.LoginFlow.Button.Secondary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="@dimen/margin_extra_large"
                 android:layout_marginEnd="@dimen/margin_extra_large"
                 android:text="@string/continue_google_button_suffix"
@@ -132,8 +149,8 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/continue_with_google_tos"
                 style="@style/Widget.LoginFlow.Button.Tertiary.Small"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
                 android:layout_marginStart="@dimen/margin_extra_large"
                 android:layout_marginEnd="@dimen/margin_extra_large"
                 android:text="@string/continue_with_google_terms_of_service_text" />
@@ -143,3 +160,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
+

@@ -60,17 +60,13 @@ open class LoginPrologueFragment(@LayoutRes layout: Int) : Fragment(layout) {
             simplifiedLoginExperiment.activate()
         }
 
-        binding.buttonGetStarted.setOnClickListener {
-            AppPrefs.setStoreCreationSource(AnalyticsTracker.VALUE_PROLOGUE)
-            AnalyticsTracker.track(stat = AnalyticsEvent.LOGIN_PROLOGUE_CREATE_SITE_TAPPED)
-            prologueFinishedListener?.onGetStartedClicked()
-        }
+
 
         if (isSimplifiedLoginVariant) setupSimplifiedLoginVariant(binding)
     }
 
     private fun setupSimplifiedLoginVariant(binding: FragmentLoginPrologueBinding) {
-        binding.orDivider.root.hide()
+        binding.orDivider!!.root.hide()
         binding.buttonLoginWpcom.text = getString(R.string.log_in)
 
         binding.buttonLoginStore.hide()

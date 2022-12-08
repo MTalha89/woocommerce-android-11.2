@@ -227,10 +227,10 @@ class SitePickerViewModel @Inject constructor(
                     }
                 )
             }
-            if (navArgs.openedFromLogin && nonWooSites.isNotEmpty()) {
-                add(Header(R.string.login_non_woo_stores_label))
-                addAll(nonWooSites.map { NonWooSiteUiModel(it) })
-            }
+//            if (navArgs.openedFromLogin && nonWooSites.isNotEmpty()) {
+//                add(Header(R.string.login_non_woo_stores_label))
+//                addAll(nonWooSites.map { NonWooSiteUiModel(it) })
+//            }
         }
         sitePickerViewState = sitePickerViewState.copy(
             hasConnectedStores = filteredSites.isNotEmpty(),
