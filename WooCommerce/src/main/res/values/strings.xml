@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">WooCommerce</string>
+    <string name="app_name">SM Automation Admin</string>
 
     <!-- Android O notification channels, these show in the Android app settings -->
     <string name="notification_channel_general_title">General</string>
@@ -199,7 +199,7 @@
     <string name="at_username">\@%s</string>
     <string name="login_no_jetpack_username">Signed in as \@%1$s\nWrong account? %2$s</string>
     <string name="login_jetpack_required">This app requires Jetpack to connect to your store.</string>
-    <string name="login_wpcom">Continue with WordPress.com</string>
+    <string name="login_wpcom">Login</string>
     <string name="login_store_address">Enter your store address</string>
     <string name="login_with_store_address">Log in with your store address</string>
     <string name="login_configure_link">Read the %1$sconfiguration instructions%2$s.</string>
